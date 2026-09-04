@@ -22,7 +22,7 @@ item.icons = {
 local recipe = {
   type = "recipe",
   name = "artificial-tree-soil",
-  category = "crafting",
+  categories = {"crafting"},
   enabled = false,
   allow_productivity = true,
   energy_required = 2,
@@ -34,7 +34,7 @@ local recipe = {
   results = {{type = "item", name = "artificial-tree-soil", amount = 10}}
 }
 
--- Ensure that trees can be planed on oir artificial soil
+-- Ensure that trees can be planted on our artificial soil
 local tree_plant = data.raw["plant"]["tree-plant"]
 table.insert(tree_plant.autoplace.tile_restriction, "artificial-tree-soil")
 
